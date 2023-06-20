@@ -14,7 +14,7 @@ spec:
     spec:
       containers:
         - name: server
-          image: itsdevin/bow-mark-server
+          image: itsdevin/bordt-server
           ports:
             - containerPort: 8080
           resources:
@@ -27,7 +27,5 @@ spec:
           env:
             - name: NODE_ENV
               value: development
-            - name: ELASTICSEARCH_PASSWORD
-              value: thisistest
             - name: APP_TYPE
               value: api

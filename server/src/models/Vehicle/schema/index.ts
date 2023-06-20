@@ -41,7 +41,7 @@ export class VehicleSchema {
   public rental!: boolean;
 
   @Field({ nullable: false })
-  @prop({ required: true, trim: true, minlength: 1, default: "Bow Mark" })
+  @prop({ required: true, trim: true, minlength: 1, default: "Bordt & Sons" })
   public sourceCompany!: string;
 
   @Field(() => [RateClass], { nullable: false })

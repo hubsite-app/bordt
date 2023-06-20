@@ -31,8 +31,7 @@ export type CompanyClass = {
   archivedAt: Scalars['DateTime'];
   createdAt: Scalars['DateTime'];
   invoices: Array<InvoiceClass>;
-  isBowMarkConcrete: Scalars['Boolean'];
-  isBowMarkPaving: Scalars['Boolean'];
+  isCompany: Scalars['Boolean'];
   materialReports: Array<CompanyMaterialReport>;
   name: Scalars['String'];
   schemaVersion: Scalars['Float'];

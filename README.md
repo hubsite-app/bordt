@@ -82,8 +82,4 @@ Docker Hub references with your own Docker Hub images.
 
 - Ensure .circleci/config.yaml has the correct Image Names for SERVER_IMAGE_NAME and CLIENT_IMAGE_NAME
 
-- Create required secrets
-
-  - `kubectl create secret generic server-secrets --from-literal=mongoURI=<value> --from-literal=jwtSecret=<value> --from-literal=elasticsearchPassword=<value>`
-
 - Deploy to your branch and ensure CircleCI passes
