@@ -18,6 +18,10 @@ const JobsiteMonthReportUpdateHelper = async () => {
       jobsiteMonthReports[i].update.status = UpdateStatus.Updated;
       await jobsiteMonthReports[i].save();
 
+      console.error(
+        `Jobsite month report ${jobsiteMonthReports[i]._id} worker error`,
+        e
+      );
       errorHandler(
         `Jobsite month report ${jobsiteMonthReports[i]._id} worker error`,
         e
