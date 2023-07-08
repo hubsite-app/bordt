@@ -162,6 +162,8 @@ const excel = async (jobsiteMonthReport: JobsiteMonthReportDocument) => {
 
     const buffer = await getWorkbookBuffer(workbook);
 
+    console.log("got here");
+
     await uploadFile(
       await jobsiteMonthReport.getExcelName(),
       buffer,
